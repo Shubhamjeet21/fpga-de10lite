@@ -17,7 +17,7 @@ Displays are active low, so each expression is inverted at the pin.
 
 Results
 14 logic elements of 49,760 (~0.03%)
-0 registers — purely combinational, so Fmax does not apply
+0 registers - purely combinational, so Fmax does not apply
 Build
 
 Open C4M1P1.qpf, compile (Ctrl+L), and program output_files/C4M1P1.sof via Tools → Programmer. Pin assignments are in the .qsf; de10lite_pins.tcl regenerates them if needed.
