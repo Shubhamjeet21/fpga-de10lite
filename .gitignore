@@ -41,3 +41,6 @@ simulation/modelsim/*
 .DS_Store
 Thumbs.db
 *.qarlog
+work/
+*.wlf
+modelsim.ini
