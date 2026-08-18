@@ -1,0 +1,81 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do C4M1P2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying c:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/16.1/C4M1P2 {C:/intelFPGA_lite/16.1/C4M1P2/DE10_LITE_Golden_Top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:52:49 on Aug 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/16.1/C4M1P2" C:/intelFPGA_lite/16.1/C4M1P2/DE10_LITE_Golden_Top.v 
+# -- Compiling module DE10_LITE_Golden_Top
+# 
+# Top level modules:
+# 	DE10_LITE_Golden_Top
+# End time: 00:52:49 on Aug 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/16.1/C4M1P2/C4M1P2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:52:49 on Aug 15,2026
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/16.1/C4M1P2/C4M1P2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hex7seg
+# -- Compiling architecture boolean_eqns of hex7seg
+# -- Compiling entity C4M1P2
+# -- Compiling architecture boolean_eqns of C4M1P2
+# -- Loading entity hex7seg
+# End time: 00:52:49 on Aug 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave sim:/DE10_LITE_Golden_Top/SW
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/HEX0
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/HEX1
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/u1/V
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/u1/z
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/u1/A
+# Unrecognized dataset prefix: sim
+add wave sim:/DE10_LITE_Golden_Top/u1/D0
+# Unrecognized dataset prefix: sim
+force -freeze sim:/DE10_LITE_Golden_Top/SW 10'b0000000000
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 100 ns
+# No Design Loaded!
+force -freeze sim:/DE10_LITE_Golden_Top/SW 10'b0000001111
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 100 ns
+# No Design Loaded!
+vsim work.DE10_LITE_Golden_Top -t ns
+# vsim work.DE10_LITE_Golden_Top -t ns 
+# Start time: 00:55:21 on Aug 15,2026
+# Loading work.DE10_LITE_Golden_Top
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.c4m1p2(boolean_eqns)
+# Loading work.hex7seg(boolean_eqns)
+add wave sim:/DE10_LITE_Golden_Top/SW
+add wave sim:/DE10_LITE_Golden_Top/HEX0
+add wave sim:/DE10_LITE_Golden_Top/HEX1
+add wave sim:/DE10_LITE_Golden_Top/u1/V
+add wave sim:/DE10_LITE_Golden_Top/u1/z
+add wave sim:/DE10_LITE_Golden_Top/u1/A
+add wave sim:/DE10_LITE_Golden_Top/u1/D0
+force -freeze sim:/DE10_LITE_Golden_Top/SW 10'b0000000000
+run 100 ns
+force -freeze sim:/DE10_LITE_Golden_Top/SW 10'b0000001111
+run 100 ns

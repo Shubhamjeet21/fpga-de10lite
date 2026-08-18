@@ -1,0 +1,7 @@
+{
+	"common_dir" : "C:/intelFPGA_lite/16.1/C4M1P2/",
+	"acds_version" : "Version 16.1.0",
+	"platform" : "windows",
+	"os" : "Windows 10",
+	"qpf" : "C4M1P2.qpf"
+}
